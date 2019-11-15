@@ -74,3 +74,32 @@ body {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
+
+#checkers-board > .square{
+    width: 75px;
+    height: 75px;
+}
+#checkers-board > .square > .checker{
+    width: 60px;
+    height: 60px;
+    border: solid 5px gray;
+    border-radius: 35px;
+    margin: 2.5px;
+}
+
+#checkers-board {
+    display: grid;
+    width: calc(8*75px);
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+.red {
+    background-color: red;
+}
+.black {
+    background-color: black;
+}
+
+#checkers-form {
+    display: block;
+ }
